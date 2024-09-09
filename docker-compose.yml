@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  todoDBl:
+    image: postgres:15.3
+    container_name: pruerbasNabool
+    restart: always
+    ports: 
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=naabolP
+      - POSTGRES_PASSWORD=naabolP
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
